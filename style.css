@@ -267,7 +267,9 @@ li{
 .menu {
   cursor: pointer;
 }
-
+.fa-heart{
+  cursor: pointer;
+}
 
  @media (max-width: 778px){
   nav{
@@ -295,6 +297,9 @@ li{
    #filter-recipes-e1{
     padding-left: 20px;
    }
+   .search-form {
+    width: 790px;
+}
  }
  @media (max-width: 426px){
   .footer-c2,.footer-c3,.footer-c4{

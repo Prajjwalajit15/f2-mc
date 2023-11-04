@@ -155,8 +155,8 @@
             </div>
             <div class="card-e4">
               <div class="filter-recipes-time">${recipe.time}</div>
-              <div class="filter-recipes-isLiked">
-                <i class="fa-regular fa-heart" style="color: #ff0505;"></i>
+              <div class="filter-recipes-isLiked"> 
+                <i class="fa-solid fa-heart"></i>
                 <i class="fa-regular fa-comment fa-flip-horizontal"></i>
               </div>
             </div>
@@ -290,9 +290,26 @@ function closeSidebarOutside(event) {
   }
 }
 
+ 
+// Event listener for the heart icon to toggle liked/unliked state
+const likeIcons = document.querySelectorAll('.fa-solid.fa-heart');
+likeIcons.forEach((icon) => {
+  icon.addEventListener('click', (event) => {
+    event.stopPropagation(); // Prevent the parent card click event from triggering
+
+    if (icon.style.color === 'red') {
+      icon.style.color = ''; // Set the color to empty, making it unfilled
+    } else {
+      icon.style.color = 'red'; // Fill the heart icon with red color
+    }
+  });
+});
 
 
 
   });
+   
+
+
+
   
- 
