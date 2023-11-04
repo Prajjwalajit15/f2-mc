@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;1,300&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="./style.css"> 
+   <title>FoodCort</title>
+</head>
+<body>
+   
+
+ <nav>
+  <div id="nav-e1"><img src="./assets/Cookpal 1.png" alt="img"></div> 
+
+   <div id="nav-e2">
+    <span class="nav-text">Home</span>
+    <span class="nav-text">Explore</span>
+    <span class="nav-text">Help</span>
+    <span><img src="./assets/dp.png" alt="img"></span>
+   </div>
+ </nav>
+
+ <div id="hero-img"><img src="./assets/hero-img.png" alt="img"></div>
+ 
+  <div id="Search-For-Recipes">Search For Recipes</div>
+
+  <form action="/search" method="get" class="search-form">
+   <input type="text" name="q" placeholder=" Search for recipes..." id="search-bar">
+   <button type="submit" class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+</form>
+
+<div id="recipe-type">
+  <div class="recipe-type-e"  id="All-Recipes">All Recipes <i class="fa-solid fa-chevron-right"></i></div>
+  <div class="recipe-type-e" id="Veg-Recipes-Only">Veg Recipes Only <i class="fa-solid fa-chevron-right"></i></div>
+  <div class="recipe-type-e" id="Non-Veg-Recipes">Non Veg Recipes <i class="fa-solid fa-chevron-right"></i></div>
+</div>
+
+<div id="filter-recipes">
+   <div id="filter-recipes-e1">
+      <div id="filter-text">Filters</div>
+      <div>Rating</div>
+      <div>
+         <div> <input type="checkbox" id="4-and-Above"  >
+            <label for="4-and-Above">4 and Above</label><br>
+         </div>
+         <div> <input type="checkbox" id="Below-4"  >
+            <label for="Below-4">Below 4</label><br>
+         </div>
+      </div>
+   </div>
+   <div id="filter-recipes-e2"> 
+      <!-- <div class="filter-recipes-card">
+         <div class="filter-recipes-img card-e1"><img src="https://source.unsplash.com/random?veggies" alt="img"></div>
+         <div class="filter-recipes-type card-e2">veg</div>
+        <div class="card-e3"> 
+         <div class="filter-recipes-name" ><b>Veggie Delight</b></div>
+         <div class="filter-recipes-ratting"><i class="fa-solid fa-star" style="color: #fdc708;"></i>4.2</div>
+         </div>
+         <div class="card-e4">
+            <div class="filter-recipes-time">30 min</div>
+            <div class="filter-recipes-isLiked"><i class="fa-regular fa-heart" style="color: #ff0505;"></i> <i class="fa-regular fa-comment fa-flip-horizontal"></i></div>
+         </div>
+      </div> -->
+   </div> 
+</div>
+
+ 
+ <script src="./script.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,355 @@
+  body {
+    padding: 0;
+    margin: 0; 
+    font-family: 'Poppins', sans-serif;  
+    }
+    .menu{ 
+      display: none; 
+    }
+    ::-webkit-scrollbar{
+      display:none;
+  }
+  nav{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; 
+      padding: 10px;
+      position: fixed;
+      top: 0; 
+      width: 100%;
+      background-color: white;
+      z-index: 10;
+  }
+  .fa-comment{
+    z-index: 1;
+  }
+  #nav-e2{ 
+      display: flex;
+      align-items: center;
+     gap: 30px;
+  }
+  .dp{
+     
+    padding-right: 20px;
+  } 
+   .nav-text{    
+      align-items: center;  
+      transition: color 0.2s;  
+    }
+    
+    .nav-text:hover {
+      color: #509e2f ;
+      cursor: pointer;
+    }  
+     #hero-img{ 
+      padding-top: 100px;   
+      margin-left: 10px;
+     }
+     #hero-img>img{
+      width: 99%; 
+     }
+     
+    #Search-For-Recipes{
+      font-weight: 900;
+      margin: 20px;
+      margin-left: 20px;
+    }
+   
+ /* Add this CSS in your external styles.css file */
+ .search-form {
+  display: flex;
+  align-items: center;
+  width: 98%;
+  padding: 10px; 
+}
+
+#search-bar {
+  flex: 1;
+  border: none;
+   
+  /* Remove margin-right property */
+}
+
+.search-button {
+  width: 40px; /* Adjust the width as needed */
+  background-color: green; 
+  color: white;
+}
+ /* Add this CSS in your external styles.css file */
+#search-bar {
+  padding-left: 20px; /* Adjust the padding to accommodate the icon */
+  background: url('./assets/search\ 1.png') no-repeat left center; /* Replace with your icon image path */
+  background-color: #f3f3f3;
+  height: 20px;
+}
+#recipe-type{
+  display: flex;
+  flex-direction: row; 
+  padding-top: 30px;
+}
+.recipe-type-e{
+  width: 200px;
+  height: 60px;
+  border-radius:10px;
+  margin: 10px;
+  font-size: 14px; 
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   cursor: pointer; 
+}
+#All-Recipes{
+  background-color: #eaaa00; 
+}
+#Veg-Recipes-Only{
+  background-color: #c4d600;
+}
+#Non-Veg-Recipes{
+  background-color: #dc582a;
+}
+.recipe-type-e {
+  background-color: transparent; /* Set the default background color (transparent or any color you prefer) */
+  color: black; /* Set the default text color */
+}
+
+/* Background color when a recipe type is selected (clicked) */
+.recipe-type-e.selected {
+  background-color: #509e2f; /* Set the selected background color to green (or any color you prefer) */
+  color: white; /* Set the text color when selected */
+}
+
+#filter-recipes{
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-around;
+  padding-top: 40px;
+}
+#filter-recipes-e1{
+  margin-left: -60px;   
+}
+.rating-checkbox{ 
+  cursor: pointer;
+}
+#filter-recipes-e2{
+  width: 75%; 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-right: -90px;
+ 
+}
+ #filter-text{
+  font-weight: 800;
+  font-size: 20px; 
+ }
+ #filter-text-2{
+  padding-top: 30px; 
+ }
+ .chk-box{
+  padding-top: 10px; 
+  cursor: pointer;
+ } 
+  
+ .filter-recipes-card{
+  width: 250px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 1px 4px 10px rgb(104, 101, 101);
+  border-top-left-radius: 20px; /* Adjust the value as needed */
+  border-top-right-radius: 20px;  
+ }
+ .filter-recipes-img>img{
+  width: 250px;
+  height: 200px;
+  border-radius: 20px; 
+  margin: auto;
+ }
+ .filter-recipes-type,.filter-recipes-ratting{
+  color: grey;
+  font-size: 10px;
+  margin-left: 5px;
+ }
+
+ .card-e3{
+  width: 230px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+  margin-left: 5px;
+  margin-right: 5px;
+ } 
+ .filter-recipes-name{
+  font-size: 15px;
+  font-weight: 900; 
+ }
+ .card-e4{ 
+  width: 230px;
+  margin-left: 5px;
+  margin-right: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+ }
+.filter-recipes-time{
+  font-size: 15px;
+  color: red;
+  font-weight: 600;
+}
+footer{
+  padding-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+   margin: 50px; 
+  font-size: 13px;
+}
+ul{
+  list-style-type: none;
+}
+.footer-c1-text{
+  width: 300px; 
+}
+li{
+  margin-top: 10px;
+}
+.footer-c4-text{
+  width:300px ; 
+}
+.email-button{ 
+  background-color: green; 
+  border-color: green;
+  color: white;
+}
+ .footer-c4-button{
+  margin-top: 15px;
+ } 
+ .tough-c{
+  display: flex;
+  flex-direction: column;
+ }
+ .sidebar {
+  position: fixed;
+  top: 0;
+  left: -200px; /* Initially hidden */
+  width: 200px;
+  height: 100%;
+  background-color: #0c0909; /* Sidebar background color */
+  transition: left 0.3s; /* Add smooth transition animation */
+  z-index: 1; /* Make sure it appears above other content */
+}
+
+.sidebar.show {
+  left: 0; /* Slide in the sidebar */
+  background-color: rgb(12, 11, 11);
+}
+
+#nav-img{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;  
+}
+
+.menu-text {
+  padding: 20px; /* Add padding for the text */
+  color: #fff; /* Text color */
+}
+
+.menu-text p {
+  margin: 0;
+  padding: 10px 0;
+}
+
+.menu {
+  cursor: pointer;
+}
+
+
+ @media (max-width: 768px){
+  nav{
+    width: 100%;
+  }
+  footer{
+    width: 100%; 
+    margin: 10px;
+  }
+  footer{
+    font-size: 7px;
+  }
+  .footer-c4-button{
+   display: none;
+  }
+  .footer-c4-text{
+    width: 200px;
+  }
+   
+ }
+ @media (max-width: 426px){
+  .footer-c2,.footer-c3,.footer-c4{
+    display: none;
+  } 
+  footer{
+    justify-content: center;
+  }
+  .f-img{
+    align-self: center;
+  }
+  #hero-img>img {
+    width: 460px; 
+    padding-left: 6px;
+}
+.search-form { 
+  width: 460px; 
+}
+#recipe-type {  
+  width: 480px;
+  margin-top: -20px;
+}
+.recipe-type-e{
+  font-size: 12px;
+}
+
+ #filter-recipes-e1 {
+  padding-left: 50px;
+}
+.menu{
+  background-color:#9be87d;
+  padding: 15px; 
+  display: block;   
+  margin-right: 10px;
+}  
+#nav-img{
+  padding-top: 10px;
+}
+#nav-img>img{ 
+  border-radius: 10px;
+}
+#nav-e2{
+  display: none;
+}
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}  
+.footer-c1{
+  padding-left: 110px; 
+} 
+.footer-c1-img{
+  padding-left: 50px;
+}
+ }
+
+ @media (max-width: 380px){
+  #hero-img>img{
+    margin-right: 15px;
+  }
+ }
+ @media (max-width: 320px){
+  #filter-recipes-e2 { 
+    margin-right: -160px;
+  }
+ }
+
+  
